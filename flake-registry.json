@@ -168,28 +168,6 @@
     },
     {
       "from": {
-        "id": "ngipkgs",
-        "type": "indirect"
-      },
-      "to": {
-        "owner": "ngi-nix",
-        "repo": "ngipkgs",
-        "type": "github"
-      }
-    },
-    {
-      "from": {
-        "id": "nickel",
-        "type": "indirect"
-      },
-      "to": {
-        "owner": "tweag",
-        "repo": "nickel",
-        "type": "github"
-      }
-    },
-    {
-      "from": {
         "id": "nix",
         "type": "indirect"
       },
