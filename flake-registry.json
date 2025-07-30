@@ -13,18 +13,6 @@
     },
     {
       "from": {
-        "id": "blender-bin",
-        "type": "indirect"
-      },
-      "to": {
-        "dir": "blender",
-        "owner": "edolstra",
-        "repo": "nix-warez",
-        "type": "github"
-      }
-    },
-    {
-      "from": {
         "id": "bundlers",
         "type": "indirect"
       },
@@ -97,17 +85,6 @@
       "to": {
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "type": "github"
-      }
-    },
-    {
-      "from": {
-        "id": "flake-utils",
-        "type": "indirect"
-      },
-      "to": {
-        "owner": "numtide",
-        "repo": "flake-utils",
         "type": "github"
       }
     },
@@ -229,17 +206,6 @@
       "to": {
         "owner": "NixOS",
         "repo": "nixos-hardware",
-        "type": "github"
-      }
-    },
-    {
-      "from": {
-        "id": "nixos-homepage",
-        "type": "indirect"
-      },
-      "to": {
-        "owner": "NixOS",
-        "repo": "nixos-homepage",
         "type": "github"
       }
     },
