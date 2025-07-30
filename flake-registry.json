@@ -2,17 +2,6 @@
   "flakes": [
     {
       "from": {
-        "id": "agda",
-        "type": "indirect"
-      },
-      "to": {
-        "owner": "agda",
-        "repo": "agda",
-        "type": "github"
-      }
-    },
-    {
-      "from": {
         "id": "arion",
         "type": "indirect"
       },
