@@ -345,17 +345,6 @@
     },
     {
       "from": {
-        "id": "pridefetch",
-        "type": "indirect"
-      },
-      "to": {
-        "owner": "SpyHoodle",
-        "repo": "pridefetch",
-        "type": "github"
-      }
-    },
-    {
-      "from": {
         "id": "sops-nix",
         "type": "indirect"
       },
