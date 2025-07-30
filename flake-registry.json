@@ -80,17 +80,6 @@
     },
     {
       "from": {
-        "id": "dwarffs",
-        "type": "indirect"
-      },
-      "to": {
-        "owner": "edolstra",
-        "repo": "dwarffs",
-        "type": "github"
-      }
-    },
-    {
-      "from": {
         "id": "fenix",
         "type": "indirect"
       },
