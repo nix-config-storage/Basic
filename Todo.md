@@ -24,10 +24,13 @@ pkgs.the-package-you-want
 
 this is "obviously" different from just installing it, but make sure you use that one
 
+replace any core deps/libs
+
+
 nix-collect-garbage -d
 see whats left, you should have a pretty clean env, good enough for now.
 
-later on you shoudl add this nuttiness:
+later on you should add this nuttiness:
 
 part 2 recurse:
 
