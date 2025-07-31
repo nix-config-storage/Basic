@@ -2,10 +2,10 @@
   description = "Declarative set of impetative steps for cleaning system state";
 
   inputs = {
-  # devenv-root = {
-  #  url = "file+file:///dev/null";
-  #  flake = false;
-  #  };
+  devenv-root = {
+    url = "file+file:///home/nixos";
+    flake = false;
+    };
     flake-parts.url = "github:hercules-ci/flake-parts";
     nixpkgs.url = "github:cachix/devenv-nixpkgs/rolling";
     devenv.url = "github:cachix/devenv";
