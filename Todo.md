@@ -53,3 +53,6 @@ call this set-point/clean-env/whatever,
 return to this state between any mass rebuilds,
 any security critical builds (kernel, sysd, drivers, modules)
 or when updating nixpkgs versions
+
+https://nixos.org/guides/nix-pills/10-developing-with-nix-shell 
+
