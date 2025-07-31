@@ -1,5 +1,5 @@
 {
-  description = "well... I guess fuck everything I was doing, this is way better";
+  description = "Declarative set of impetative steps for cleaning system state";
 
   inputs = {
   # devenv-root = {
