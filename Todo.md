@@ -3,6 +3,10 @@ export env vars for -
 flake-registry - file:///
 NIX_PATH
 NIXPKGS-CONFIG
+
+import from derivation false
+
+
 ----
 convert nix.conf to either nix.settings/nix.options or whichever it was, or devenv.yaml, or both 
 
