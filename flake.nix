@@ -3,7 +3,7 @@
 
   inputs = {
   devenv-root = {
-    url = "file+file:///home/nixos";
+    url = "file+file:///home/nixos/basic";
     flake = false;
     };
     flake-parts.url = "github:hercules-ci/flake-parts";
