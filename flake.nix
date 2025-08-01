@@ -1,5 +1,5 @@
 {
-  description = "Declarative set of impetative steps for cleaning system state";
+  description = "Declarative set of imperative steps for cleaning system state";
 
   inputs = {
   devenv-root = {
@@ -17,6 +17,9 @@
   nixConfig = {
     extra-trusted-public-keys = "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=";
     extra-substituters = "https://devenv.cachix.org";
+    flake-registry = "./init/res/files/flake-registry.json";
+
+  NIX_PATH = "nixpkgs=flake:/home/nixos/basic/"; 
   };
 
   outputs = inputs@{ flake-parts, devenv-root, ... }:
@@ -24,34 +27,37 @@
       imports = [
         inputs.devenv.flakeModule
       ];
-      systems = [ "x86_64-linux" "i686-linux"  ];
+      systems = [ "x86_64-linux" ];
 
       perSystem = { config, self', inputs', pkgs, system, ... }: {
         # Per-system attributes can be defined here. The self' and inputs'
         # module parameters provide easy access to attributes of the same
         # system.
-
-        # Equivalent to  inputs'.nixpkgs.legacyPackages.hello;
-        packages.default = pkgs.hello;
-
+	# Equivalent to  inputs'.nixpkgs.legacyPackages.hello;
+#apps.default = devenv.
+        packages.default = pkgs.devenv;
+         
         devenv.shells.default = {
           name = "my-project";
 
           imports = [
             # This is just like the imports in devenv.nix.
             # See https://devenv.sh/guides/using-with-flake-parts/#import-a-devenv-module
-            # ./devenv-foo.nix
+             ./devenv.nix
           ];
 
           # https://devenv.sh/reference/options/
-          packages = [ config.packages.default 
+          packages = [
+ config.packages.default 
 
 ];
+#apps = { 
+#default = devShells.default;
+#};
 
           enterShell = ''
             hello
           '';
-
           processes.hello.exec = "hello";
         };
 

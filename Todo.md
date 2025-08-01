@@ -56,3 +56,4 @@ or when updating nixpkgs versions
 
 https://nixos.org/guides/nix-pills/10-developing-with-nix-shell 
 
+export ca-cert location
